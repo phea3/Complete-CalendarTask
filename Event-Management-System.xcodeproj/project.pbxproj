@@ -16,6 +16,10 @@
 		09B4FD02284AF6A2008FFFAB /* Event_Management_SystemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B4FD01284AF6A2008FFFAB /* Event_Management_SystemTests.swift */; };
 		09B4FD0C284AF6A2008FFFAB /* Event_Management_SystemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B4FD0B284AF6A2008FFFAB /* Event_Management_SystemUITests.swift */; };
 		09B4FD0E284AF6A2008FFFAB /* Event_Management_SystemUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B4FD0D284AF6A2008FFFAB /* Event_Management_SystemUITestsLaunchTests.swift */; };
+		09B4FD23284AFFCF008FFFAB /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B4FD22284AFFCF008FFFAB /* TaskViewModel.swift */; };
+		09B4FD25284AFFDE008FFFAB /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B4FD24284AFFDE008FFFAB /* Home.swift */; };
+		09B4FD27284B0537008FFFAB /* DynamicFilteredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B4FD26284B0537008FFFAB /* DynamicFilteredView.swift */; };
+		09B4FD29284B1158008FFFAB /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B4FD28284B1158008FFFAB /* NewTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,10 @@
 		09B4FD07284AF6A2008FFFAB /* Event-Management-SystemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Event-Management-SystemUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		09B4FD0B284AF6A2008FFFAB /* Event_Management_SystemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_Management_SystemUITests.swift; sourceTree = "<group>"; };
 		09B4FD0D284AF6A2008FFFAB /* Event_Management_SystemUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event_Management_SystemUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		09B4FD22284AFFCF008FFFAB /* TaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		09B4FD24284AFFDE008FFFAB /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		09B4FD26284B0537008FFFAB /* DynamicFilteredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFilteredView.swift; sourceTree = "<group>"; };
+		09B4FD28284B1158008FFFAB /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +106,13 @@
 		09B4FCEA284AF6A1008FFFAB /* Event-Management-System */ = {
 			isa = PBXGroup;
 			children = (
+				09B4FD1B284AFB4E008FFFAB /* ViewModel */,
+				09B4FD1A284AFB3E008FFFAB /* View */,
 				09B4FCEB284AF6A1008FFFAB /* Event_Management_SystemApp.swift */,
 				09B4FCED284AF6A1008FFFAB /* ContentView.swift */,
-				09B4FCEF284AF6A2008FFFAB /* Assets.xcassets */,
 				09B4FCF4284AF6A2008FFFAB /* Persistence.swift */,
 				09B4FCF6284AF6A2008FFFAB /* Event_Management_System.xcdatamodeld */,
+				09B4FCEF284AF6A2008FFFAB /* Assets.xcassets */,
 				09B4FCF1284AF6A2008FFFAB /* Preview Content */,
 			);
 			path = "Event-Management-System";
@@ -131,6 +141,24 @@
 				09B4FD0D284AF6A2008FFFAB /* Event_Management_SystemUITestsLaunchTests.swift */,
 			);
 			path = "Event-Management-SystemUITests";
+			sourceTree = "<group>";
+		};
+		09B4FD1A284AFB3E008FFFAB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				09B4FD24284AFFDE008FFFAB /* Home.swift */,
+				09B4FD26284B0537008FFFAB /* DynamicFilteredView.swift */,
+				09B4FD28284B1158008FFFAB /* NewTask.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09B4FD1B284AFB4E008FFFAB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				09B4FD22284AFFCF008FFFAB /* TaskViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +292,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09B4FCF5284AF6A2008FFFAB /* Persistence.swift in Sources */,
+				09B4FD27284B0537008FFFAB /* DynamicFilteredView.swift in Sources */,
 				09B4FCEE284AF6A1008FFFAB /* ContentView.swift in Sources */,
 				09B4FCF8284AF6A2008FFFAB /* Event_Management_System.xcdatamodeld in Sources */,
+				09B4FD23284AFFCF008FFFAB /* TaskViewModel.swift in Sources */,
+				09B4FD29284B1158008FFFAB /* NewTask.swift in Sources */,
+				09B4FD25284AFFDE008FFFAB /* Home.swift in Sources */,
 				09B4FCEC284AF6A1008FFFAB /* Event_Management_SystemApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
